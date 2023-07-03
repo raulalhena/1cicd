@@ -71,3 +71,13 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+ steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+      - name: npm install
+        run: npm install
+      - name: lint
+        run: npm run eslint
