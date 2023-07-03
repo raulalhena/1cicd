@@ -9,6 +9,7 @@ jobs:
   preparacion_entorno:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Saludar
         run: |
           echo "Hola Github Actions!!!"
