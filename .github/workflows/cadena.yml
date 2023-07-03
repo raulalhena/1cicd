@@ -13,12 +13,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '16.x'
-      - name: Saludar
-        run: |
-          echo "Hola Github Actions!!!"
-      - name: Date
-        run: |
-          echo $(date)
-      - name: List 
-        run: |
-          ls -l
+      - name: npm install
+        run: npm install
+      - name: lint
+        run: npm run eslint
