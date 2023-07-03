@@ -3,7 +3,7 @@ name: Bienvenida!
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   saludo_job:
