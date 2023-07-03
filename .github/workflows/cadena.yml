@@ -6,15 +6,14 @@ on:
       - main
 
 jobs:
-preparacion_entorno:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v1
-    with:
-      node-version: '16.x'
-    - name: npm install
-      run: npm install
-    - name: lint
-      run: npm run eslint
-      
+  preparacion_entorno:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      with:
+        node-version: '16.x'
+      - name: npm install
+        run: npm install
+      - name: lint
+        run: npm run eslint
