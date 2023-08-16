@@ -8,13 +8,13 @@ on:
 jobs:
   saludo_job:
     runs-on: ubuntu-latest
-    steps:
+   steps:
       - name: Saludar
         run: |
           echo "Hola Github Actions!!!"
       - name: Date
         run: |
           echo $(date)
-      - name: List
+      - name: List 
         run: |
           ls -l
